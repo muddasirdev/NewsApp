@@ -43,7 +43,7 @@ NewsApp/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/NewsApp.git
+git clone https://github.com/muddasirdev/NewsApp.git
 ```
 
 2. Get your free API key from [NewsAPI.org](https://newsapi.org)
@@ -56,7 +56,10 @@ git clone https://github.com/yourusername/NewsApp.git
 4. Build and run the project in Android Studio
 
 ## 📸 Screenshots
-<!-- Add your screenshots here -->
+
+| Home Screen | Bookmarks | Article Detail |
+|---|---|---|
+| ![home](screenshots/home.png) | ![bookmarks](screenshots/bookmarks.png) | ![detail](screenshots/detail.png) |
 
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
