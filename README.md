@@ -59,7 +59,7 @@ git clone https://github.com/muddasirdev/NewsApp.git
 
 | Home Screen | Bookmarks | Article Detail |
 |---|---|---|
-| ![home](screenshots/home.png) | ![bookmarks](screenshots/bookmarks.png) | ![detail](screenshots/detail.png) |
+| ![home](screenshots/home.jpg) | ![bookmarks](screenshots/bookmarks.jpg) | ![detail](screenshots/detail.jpg) |
 
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
