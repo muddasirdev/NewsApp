@@ -1,68 +1,35 @@
-📰 Android News App built with Jetpack Compose
+# NewsApp
 
-A modern, fully functional News App that delivers real-time news with offline support, bookmarking, and category filtering.
+An Android news reader built with Kotlin and Jetpack Compose. The project demonstrates a layered app structure with a NewsAPI client, Room persistence, bookmarks, and category navigation.
 
-## ✨ Features
-- 🌐 Real-time news from NewsAPI.org
-- 📂 6 Categories — General, Business, Technology, Sports, Health, Entertainment
-- 🔖 Bookmark articles to read later
-- 📡 Offline support with local caching
-- 🌍 Full article reading via WebView
-- ⚡ Smooth navigation between screens
+## Features
 
-## 🛠️ Tech Stack
-| Technology | Purpose |
-|---|---|
-| Jetpack Compose | Modern UI |
-| MVVM Architecture | Clean code structure |
-| Hilt | Dependency Injection |
-| Retrofit + OkHttp | REST API calls |
-| Room Database | Local storage & caching |
-| Kotlin Coroutines + Flow | Async operations |
-| KSP | Annotation processing |
-| Coil | Image loading |
-| Navigation Compose | Screen navigation |
+- Browse top headlines by category
+- Save and remove bookmarked articles
+- Cache articles locally with Room for offline access to saved content
+- Open article details in an in-app WebView
+- Compose UI with Navigation Compose and a ViewModel
 
-## 📁 Project Structure
-```
-NewsApp/
-├── data/
-│   ├── api/          # Retrofit API interface
-│   ├── db/           # Room Database & DAO
-│   ├── model/        # Data classes
-│   └── repository/   # Data manager
-├── di/               # Hilt modules
-├── ui/
-│   ├── screens/      # Composable screens
-│   ├── components/   # Reusable UI components
-│   └── navigation/   # Navigation setup
-└── viewmodel/        # ViewModels
-```
+## Tech
 
-## 🚀 Getting Started
+Kotlin, Jetpack Compose, Retrofit, OkHttp, Room, Hilt, Coroutines and Flow, Coil, and Navigation Compose.
 
-1. Clone the repository
-```bash
-git clone https://github.com/muddasirdev/NewsApp.git
-```
+## Screenshots
 
-2. Get your free API key from [NewsAPI.org](https://newsapi.org)
+| Headlines | Bookmarks | Article |
+| --- | --- | --- |
+| ![Headlines screen](screenshots/home.jpg) | ![Bookmarks screen](screenshots/bookmarks.jpg) | ![Article screen](screenshots/detail.jpg) |
 
-3. Add your API key in `NewsApi.kt`
-```kotlin
-@Query("apiKey") apiKey: String = "YOUR_API_KEY_HERE"
-```
+## Run locally
 
-4. Build and run the project in Android Studio
+1. Clone this repository and open it in Android Studio.
+2. Let Gradle sync, then run the `app` configuration on an Android device or emulator (minimum SDK 26).
+3. The API client currently contains the placeholder `YOUR_API_KEY_HERE` in `NewsApi.kt`. Add a NewsAPI key for local development. Do not commit a personal key; this repository does not currently load it from a local secrets file.
 
-## 📸 Screenshots
+## Project status
 
-| Home Screen | Bookmarks | Article Detail |
-|---|---|---|
-| ![home](screenshots/home.jpg) | ![bookmarks](screenshots/bookmarks.jpg) | ![detail](screenshots/detail.jpg) |
+This is a sample app and starting point for further development. API availability and usage limits depend on the NewsAPI plan and selected region.
 
-## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
+## License
 
----
-⭐ If you found this helpful, please give it a star!
+No license file is currently included. Contact the repository owner before reusing or distributing this code.
